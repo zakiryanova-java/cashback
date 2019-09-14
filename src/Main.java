@@ -14,8 +14,9 @@ public class Main {
                 amountInSpecial * percentInSpecial
         ) / 100;
         int cashback;
-        if (result>3000) {
-            cashback =3000;
+        int cashbackLimit = 3000;
+        if (result> cashbackLimit) {
+            cashback = cashbackLimit;
         } else {
             cashback= result;
         }
